@@ -4,7 +4,7 @@ body {
 
 .slides {
   position: relative;
-  height: 100vh;
+  height: 72vh;
   padding: 0;
   margin: 0;
   margin-bottom: 20px;
@@ -20,30 +20,34 @@ body {
   z-index: -999;
   transition: opacity 0.3s;
   padding: 10px;
+  text-indent: -9999px;
+  background-size: cover;
+  background-position: center;
 }
+
 .active {
   opacity: 1;
   z-index: 0;
 }
 
 .slide:nth-of-type(1) {
-  background: red;
+  background-image: url(img/light.jpg);
 }
 
 .slide:nth-of-type(2) {
-  background: orange;
+  background-image: url(img/dark.jpg);
 }
 
 .slide:nth-of-type(3) {
-  background: green;
+  background-image: url(img/photo.jpg);
 }
 
 .slide:nth-of-type(4) {
-  background: blue;
+  background-image: url(img/photo2.jpg);
 }
 
 .slide:nth-of-type(5) {
-  background: purple;
+  background-image: url(img/photo3.jpg);
 }
 
 .buttons,
@@ -75,4 +79,66 @@ body {
 .indicator.active {
   background: tomato;
   border-color: tomato;
+}
+
+.header-menu {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 20px 10px;
+  z-index: 1;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(24 22 22 / 30%);
+}
+
+.header-menu__container {
+  display: grid;
+  align-items: center;
+  gap: 20px;
+  grid-template-columns: auto 1fr;
+}
+
+.header-logo {
+  display: block;
+
+  text-align: center;
+  letter-spacing: 0.22em;
+
+  color: black;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.header-logo__accent {
+  display: inline-block;
+
+  margin-right: 4px;
+  padding: 14px 1px 13px 5px;
+
+  border: 3px solid #d53d27;
+}
+
+.header-navbar__list {
+  display: grid;
+  justify-content: end;
+  gap: 20px;
+  list-style-type: none;
+  grid-template-columns: repeat(auto-fit, minmax(40px, max-content));
+}
+
+.header-navbar__link {
+  display: block;
+  transition: color 0.5s;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+
+  color: black;
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+
+.header-navbar__link:hover {
+  color: #d66926;
 }
