@@ -67,7 +67,7 @@ function Carousel(containerId = '#carousel', slideId = '.slide', interval = 2000
         this.currentSlide = (n + this.SLIDES_COUNT) % this.SLIDES_COUNT
         this.slides[this.currentSlide].classList.toggle('active')
         this.indicatorItems[this.currentSlide].classList.toggle('active')
-      },
+    },
       
     _gotoNext() {  
       this._gotoNth(this.currentSlide + 1)
