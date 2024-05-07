@@ -68,7 +68,7 @@ body {
   display: flex;
   cursor: pointer;
   user-select: none;
-  font-size: 2.01rem;
+  font-size: 2rem;
 }
 
 .indicator:hover,
