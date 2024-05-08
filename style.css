@@ -52,10 +52,10 @@ body {
 
 .buttons,
 .indicators {
-  display: flex;
+  display: flex !important;
   gap: 20px;
   margin-bottom: 20px;
-  justify-content: center;
+  justify-content: center !important;
 }
 
 .indicator,
