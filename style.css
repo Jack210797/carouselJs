@@ -142,3 +142,9 @@ body {
 .header-navbar__link:hover {
   color: #d66926;
 }
+
+@media max-width 690px {
+  .header-navbar__list {
+    display: none;
+  }
+}
