@@ -74,8 +74,8 @@ class Carousel {
     this.nextBtn.addEventListener('click', this.nextHandler.bind(this))
     this.prevBtn.addEventListener('click', this.prevHandler.bind(this))
     this.indicatorsContainer.addEventListener('click', this._indicateHandler.bind(this))       
-    this.slidesContainer.addEventListener('mouseenter', this.pausePlayHandler.bind(this))
-    this.slidesContainer.addEventListener('mouseleave', this.pausePlayHandler.bind(this))
+    this.slidesContainer.addEventListener('mouseenter', this.pauseHandler.bind(this))
+    this.slidesContainer.addEventListener('mouseleave', this.playHandler.bind(this))
   }
 
   _gotoNth(n) {
